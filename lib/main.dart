@@ -57,16 +57,17 @@ class HomeScreen extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => OrderScreen(
-                                      "images/coffee1.jpeg",
+                                      "images/coffee1.png",
                                       "Americano",
                                       "Steam hot foam",
                                       2.5)));
                         },
-                        child: ReusaContainer("images/coffee1.jpeg",
-                            "Americano", "Steam hot foam", "1")),
+                        child: ReusaContainer("images/coffee1.png",
+                            "Americano", "Steam hot foam", "1.5")),
                   ),
                   Expanded(
-                    child: ReusaContainer("images/coffee2.jpg", "Cappuccino",
+
+                    child: ReusaContainer("images/coffee2.png", "Cappuccino",
                         "Double Hot milk", "4"),
                   ),
                 ],
@@ -74,12 +75,12 @@ class HomeScreen extends StatelessWidget {
               Row(
                 children: [
                   Expanded(
-                    child: ReusaContainer("images/coffee3.jpg", "Flat White",
+                    child: ReusaContainer("images/coffee3.png", "Flat White",
                         "Steam hot foam", "2.5"),
                   ),
                   Expanded(
                     child: ReusaContainer(
-                        "images/coffee4.jpg", "Latte", "Double Hot milk", "3"),
+                        "images/coffee4.png", "Latte", "Double Hot milk", "3"),
                   ),
                 ],
               ),
@@ -87,22 +88,22 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Expanded(
                     child: ReusaContainer(
-                        "images/coffee5.jpg", "Afforgo", "Steam hot foam", "2"),
+                        "images/coffee5.png", "Afforgo", "Steam hot foam", "2"),
                   ),
                   Expanded(
-                    child: ReusaContainer("images/coffee6.jpg",
-                        "Hot Chocolate ", "Double Hot milk", "3.5"),
+                    child: ReusaContainer("images/coffee6.png",
+                        "Hot Chocolate", "Double Hot milk", "3.5"),
                   ),
                 ],
               ),
               Row(
                 children: [
                   Expanded(
-                    child: ReusaContainer("images/coffee7.jpg", "Espresso",
+                    child: ReusaContainer("images/coffee7.png", "Espresso",
                         "Steam hot foam", "1.5"),
                   ),
                   Expanded(
-                    child: ReusaContainer("images/coffee8.jpg", "Iced Mocha",
+                    child: ReusaContainer("images/coffee8.png", "Iced Mocha",
                         "Double Hot milk", "3"),
                   ),
                 ],
@@ -142,11 +143,11 @@ class ReusaContainer extends StatelessWidget {
           ),
           Text(
             title,
-            style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           Text(
             desc,
-            style: TextStyle(fontSize: 22),
+            style: TextStyle(fontSize: 20),
           ),
           Text(
             "\$${price}",
